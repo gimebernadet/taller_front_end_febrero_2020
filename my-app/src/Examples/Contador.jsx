@@ -6,6 +6,7 @@ export default class Contador extends Component {
     this.state = {
       count: 0
     };
+    //hola
 
     this.increment = this.increment.bind(this);
   }
