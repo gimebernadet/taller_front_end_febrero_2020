@@ -12,7 +12,6 @@ export default class Contador extends Component {
   }
 
   increment(event) {
-    debugger;
     this.setState({ count: this.state.count + 1 });
   }
 
