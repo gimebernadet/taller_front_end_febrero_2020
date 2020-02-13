@@ -6,10 +6,6 @@ export default class AddToDos extends Component {
     this.state = {
       newToDo: ""
     };
-
-    this.addToDo = this.addToDo.bind(this);
-
-    this.handleChange = this.handleChange.bind(this);
   }
 
   addToDo(event) {
@@ -25,7 +21,12 @@ export default class AddToDos extends Component {
   render() {
     return (
       <div>
-        <input value={this.state.newToDo} onChange={event => this.handleChange(event)}></input>
+        <input
+          className="todo-form"
+          placeholder="Add todo text..."
+          value={this.state.newToDo}
+          onChange={event => this.handleChange(event)}
+        ></input>
         <button onClick={event => this.addToDo(event)}>Add</button>
       </div>
     );

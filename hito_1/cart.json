@@ -1,0 +1,10 @@
+[{
+      "_id": "5e40b0ee97fef18946b150e4",
+      "count": 2,
+      "name": "Mermelada de Arándanos",
+      "description": "Mermelada de arándanos cosechados en el Himalaya, recolectadas manualmente.",
+      "price": 1000,
+      "photo": "http://tiendaonline2020.herokuapp.com/img/mermarandanos.jpg"
+   }
+
+]

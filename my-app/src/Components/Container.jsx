@@ -6,7 +6,7 @@ export default class Container extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listToDos: [{ label: "Ir al super", done: true }]
+      listToDos: []
     };
   }
 
@@ -14,6 +14,7 @@ export default class Container extends Component {
     let { listToDos } = this.state;
     // listToDos.push({ label: label, done: false });
     // this.setState({ listToDos: listToDos });
+
     this.setState({ listToDos: [...listToDos, { label, done: false }] });
   };
 
@@ -26,11 +27,17 @@ export default class Container extends Component {
   render() {
     return (
       <div>
-        <AddToDos onSubmit={this.addItem} />
-        <ListToDos
-          list={this.state.listToDos}
-          onToDoChange={this.handleToDoChange}
-        />
+        <header>
+          <h1>ToDo List!</h1>
+          <AddToDos onSubmit={this.addItem} />
+        </header>
+        ,
+        <div className="content">
+          <ListToDos
+            list={this.state.listToDos}
+            onToDoChange={this.handleToDoChange}
+          />
+        </div>
       </div>
     );
   }

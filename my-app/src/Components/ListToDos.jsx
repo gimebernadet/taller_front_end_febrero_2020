@@ -3,7 +3,7 @@ import { ToDo } from "./ToDo";
 
 export const ListToDos = props => {
   return (
-    <ul>
+    <div className="todo-list">
       {props.list.map((todo, index) => (
         <ToDo
           key={index}
@@ -13,6 +13,6 @@ export const ListToDos = props => {
           onToDoChange={props.onToDoChange}
         />
       ))}
-    </ul>
+    </div>
   );
 };

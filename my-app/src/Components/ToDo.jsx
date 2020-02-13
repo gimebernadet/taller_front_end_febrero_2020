@@ -8,7 +8,7 @@ export const ToDo = props => {
   };
 
   return (
-    <div>
+    <div className={props.done ? "todo-card compleated" : "todo-card"}>
       <input
         type="checkbox"
         checked={props.done}
