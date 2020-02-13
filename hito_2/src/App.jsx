@@ -40,6 +40,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
+        {/* es equivalente a: {this.state.showLogin ? <Login /> : null} */}
+
         {this.state.showLogin && (
           <Login goToHome={this.goToHome} goToSignUp={this.goToSignUp} />
         )}
