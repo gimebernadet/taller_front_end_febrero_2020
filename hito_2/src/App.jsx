@@ -13,12 +13,38 @@ export default class App extends Component {
     };
   }
 
+  goToLogin = () => {
+    this.setState({
+      showLogin: true,
+      showSignUp: false,
+      showHome: false
+    });
+  };
+
+  goToSignUp = () => {
+    this.setState({
+      showLogin: false,
+      showSignUp: true,
+      showHome: false
+    });
+  };
+
+  goToHome = () => {
+    this.setState({
+      showLogin: false,
+      showSignUp: false,
+      showHome: true
+    });
+  };
+
   render() {
     return (
       <div className="app">
-        {this.state.showLogin && <Login />}
-        {this.state.showSignUp && <SignUp />}
-        {this.state.showHome && <Home />}
+        {this.state.showLogin && (
+          <Login goToHome={this.goToHome} goToSignUp={this.goToSignUp} />
+        )}
+        {this.state.showSignUp && <SignUp goToLogin={this.goToLogin} />}
+        {this.state.showHome && <Home goToLogin={this.goToLogin} />}
       </div>
     );
   }

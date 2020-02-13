@@ -7,6 +7,12 @@ export default class Login extends Component {
   }
 
   render() {
-    return <div>LOGIN</div>;
+    return (
+      <div>
+        LOGIN
+        <button onClick={() => this.props.goToHome()}>SUBMIT</button>
+        <button onClick={() => this.props.goToSignUp()}>GO TO SIGN-UP</button>
+      </div>
+    );
   }
 }
