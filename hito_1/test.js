@@ -120,7 +120,7 @@ async function test11() {
         );
         //console.log("result 11: ", result11.data);
         console.groupEnd();
-
+        test12();
 
     } catch (err) {
         console.group("TEST 11: sign-up");
@@ -153,7 +153,7 @@ async function test12() {
     }
 }
 
-test12();
+
 
 async function test13() {
     try {
