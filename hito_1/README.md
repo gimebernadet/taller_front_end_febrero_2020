@@ -9,7 +9,7 @@ Para poder probar las librerías que usted hizo en el primer hito debe seguir lo
 
 ACLARACIONES:
 
-- Los test de services solo funcionan si usted utilizó la librería axios, para probar los servicios hechos con fetch tendrá que probar en el browser directamente
+- Los test de services solo funcionan si usted utilizó la librería axios, para probar los servicios hechos con fetch tendrá que probar en el browser directamente, puede usar el archivo ```test-with-fetch.js``` para realizar dicha prueba. Recomiendo utilizar chrome, abrir la pagina de la (api)[http://tiendaonline2020.herokuapp.com/api-docs/#/] y ahi usar la consola de chrome. Es importante hacerlo en la pagina de la api para no tener problema de CORS.
 - Todos los test tienen una linea comentada que tiene el resultado de correr la función que se utiliza en el test, puede sacar el comentario y ver el resultado en la terminal
 - Este test se hizo utilizando **_NODE.js_** a eso se debe el cambio en los exports e imports (no copiar esto en el proyecto react).
 - Se asume que el carrito es una lista del estilo:
