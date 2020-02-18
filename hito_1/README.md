@@ -9,6 +9,6 @@ Para poder probar las librerías que usted hizo en el primer hito debe seguir lo
 
 ACLARACIONES:
 
-- Los test de services solo funcionan si usted utilizó la librería axios, para probar los servicios hechos con fetch tendrá que probar en el browser directamente 
+- Los test de services solo funcionan si usted utilizó la librería axios, para probar los servicios hechos con fetch tendrá que probar en el browser directamente
 - Todos los test tienen una linea comentada que tiene el resultado de correr la función que se utiliza en el test, puede sacar el comentario y ver el resultado en la terminal
-- Este test se hizo utilizando **_NODE.js_** a eso se debe el cambio en los exports e imports.
+- Este test se hizo utilizando **_NODE.js_** a eso se debe el cambio en los exports e imports (no copiar esto en el proyecto react).
