@@ -1,0 +1,82 @@
+body {
+  background: #fff;
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: 'intro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #000000;
+}
+
+header {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  height: 37px;
+  padding: 4px;
+  border-radius: 10px;
+  color: white;
+  background-color: #6b00ff;
+  min-width: 70px;
+  margin: 0px 10px;
+}
+
+input {
+
+  width: 50%;
+  height: 27px;
+  border-radius: 10px;
+  padding: 4px;
+  color: black;
+  border: solid 1.2px #ccc;
+
+}
+
+.content {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 20px;
+  text-align: center;
+  min-width: 80%;
+  min-height: 350px;
+}
+
+
+.todo-list {
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+}
+
+.todo-card {
+  margin: 10px;
+  border-radius: 4px;
+  padding: 4px;
+  color: #666;
+  border: solid 1.2px #ccc;
+  background-color: #6b00ff0f;
+}
+
+.todo-card>input {
+  width: 20px;
+}
+
+.todo-card.compleated {
+  color: #666;
+  background-color: #66666621;
+  font-style: italic;
+  border: solid 1.2px #ccc;
+  text-decoration: line-through;
+}
